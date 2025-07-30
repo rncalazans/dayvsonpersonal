@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dayvson Victor | Personal Trainer</title>
+
+  <!-- TailwindCSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- AOS (Animate On Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+    }
+    .red-highlight {
+      color: #ef4444;
+    }
+    .btn-animate {
+      transition: all 0.3s ease;
+      transform: scale(1);
+    }
+    .btn-animate:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+    }
+    .floating-cta {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .floating-cta a {
+      background-color: #ef4444;
+      color: white;
+      padding: 12px;
+      border-radius: 50%;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      transition: background-color 0.3s;
+    }
+    .floating-cta a:hover {
+      background-color: #dc2626;
+    }
+  </style>
+</head>
+
+<body class="text-white">
+
+  <!-- Botões Flutuantes -->
+  <div class="floating-cta">
+    <a href="https://wa.me/558191615693" title="WhatsApp" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="w-6 h-6">
+    </a>
+    <a href="https://instagram.com/dayvsonpersonal" title="Instagram" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" class="w-6 h-6">
+    </a>
+  </div>
+
+  <!-- Hero -->
+  <section class="relative w-full h-screen flex items-center justify-center bg-black" data-aos="fade-up">
+    <img src="/static/dayvson.png" alt="Dayvson Victor" class="absolute inset-0 object-cover w-full h-full opacity-20">
+    <div class="relative z-10 text-center px-6">
+      <h1 class="text-5xl md:text-7xl font-extrabold mb-4 leading-tight">Transforme seu corpo com <span class="red-highlight">Dayvson Victor</span></h1>
+      <p class="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto">Personal Trainer focado em transformar sua vida com treinos personalizados e acompanhamento real.</p>
+      <a href="https://wa.me/558191615693" class="mt-8 inline-block bg-red-600 text-white px-8 py-4 rounded-full shadow-lg text-lg btn-animate">Comece sua transformação</a>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="py-20 px-6 bg-gray-900 max-w-6xl mx-auto" data-aos="fade-up" ata-aos-delay="300">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div class="flex flex-col items-center md:items-start">
+        <img src="/static/dayvson_logo.png" alt="Logo Dayvson" class="w-20 h-20 mb-4">
+        <h2 class="text-4xl font-bold red-highlight mb-6">Quem é Dayvson?</h2>
+        <p class="text-gray-300 leading-relaxed text-lg text-justify mb-6">
+          Olá, me chamo Dayvson Oliveira, sou personal trainer com mais de 4 anos de experiência em saúde, emagrecimento e hipertrofia.
+          Vou te ajudar a atingir seus objetivos com segurança e constância.
+        </p>
+        <h3 class="text-2xl font-semibold text-white mb-4">Especialidades e principais cursos:</h3>
+        <ul class="list-disc ml-6 text-gray-300 space-y-2 text-base">
+          <li>Pós-graduação em montagem e prescrição para grupos especiais</li>
+          <li>Montagem e organização do treino de força</li>
+          <li>Biomecânica prática na musculação e treinamento de força</li>
+          <li>Meeting de treinamento de força</li>
+        </ul>
+        <a href="https://wa.me/558191615693" class="mt-8 inline-block bg-red-600 text-white px-6 py-3 rounded-xl shadow-md btn-animate">Fale comigo e inicie sua jornada</a>
+      </div>
+      <div class="relative group">
+        <div class="relative flex justify-center group" data-aos="flip-right" data-aos-delay="500">
+          <img src="/static/dayvson.png" alt="Foto de Dayvson Victor"
+            class="rounded-full shadow-xl w-64 h-64 object-cover transform group-hover:scale-105 transition duration-500">
+          <div class="absolute -bottom-4 bg-red-600 px-4 py-1 text-sm rounded-full shadow-lg text-white group-hover:scale-105 transition duration-500">
+            Seu Coach Pessoal
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONSULTORIA ONLINE -->
+  <section class="py-20 px-6 max-w-6xl mx-auto" data-aos="fade-up">
+    <h2 class="text-4xl font-bold red-highlight mb-10 text-center">Consultoria Online</h2>
+    <div class="grid md:grid-cols-2 gap-12 mb-16">
+      <div>
+        <img src="https://cdn-icons-png.flaticon.com/512/3208/3208707.png" alt="Treino Online" class="w-24 h-24 mb-4">
+        <h3 class="text-2xl font-semibold mb-4">O que é Anamnese?</h3>
+        <p class="text-gray-300 text-lg leading-relaxed mb-6">
+          É um questionário online via Google Forms utilizado para entender seu histórico, necessidades e limitações. Isso permite montar um treino personalizado, seguro e eficiente.
+        </p>
+        <h3 class="text-2xl font-semibold mb-4">Como funciona?</h3>
+        <ul class="list-disc ml-6 text-gray-300 space-y-2 text-base">
+          <li><strong>Treino no aplicativo:</strong> Receba seu plano no MFITPERSONAL com vídeos demonstrativos e atualizações semanais.</li>
+          <li><strong>Suporte via WhatsApp:</strong> Atendimento direto todos os dias para dúvidas, ajustes e acompanhamento.</li>
+        </ul>
+      </div>
+      <div class="flex flex-col justify-center items-center text-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/1995/1995525.png" alt="Check-up" class="w-24 h-24 mb-4">
+        <h3 class="text-2xl font-bold mb-2">Pronto para começar?</h3>
+        <p class="text-gray-300 mb-6">Faça sua anamnese e inicie sua jornada!</p>
+        <a href="https://wa.me/558191615693" class="inline-block bg-white text-red-700 font-semibold px-6 py-3 rounded-xl shadow-md btn-animate">Quero fazer minha anamnese</a>
+      </div>
+    </div>
+
+    <!-- Planos Online -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16" data-aos="zoom-in" data-aos-delay="300">
+      <div class="group bg-white rounded-xl p-6 shadow-lg text-black text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl" data-aos="slide-left" data-aos-delay="600">
+        <h3 class="text-2xl font-bold mb-2 group-hover:text-red-600 group-hover:underline">Plano Básico</h3>
+        <ul class="text-gray-800 text-base mb-4 space-y-2">
+          <li>✔️ Anamnese</li>
+          <li>✔️ Avaliação Online (opcional)</li>
+          <li>✔️ Treino no aplicativo</li>
+          <li>✔️ Suporte via WhatsApp</li>
+        </ul>
+        <p class="text-xl font-semibold text-red-600">Por apenas R$ 80,00</p>
+      </div>
+
+      <div class="group bg-red-600 rounded-xl p-6 shadow-lg text-white text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl" data-aos="slide-left" data-aos-delay="1000">
+        <h3 class="text-2xl font-bold mb-2 group-hover:underline">Plano Premium</h3>
+        <ul class="text-white text-base mb-4 space-y-2">
+          <li>✔️ Anamnese</li>
+          <li>✔️ Avaliação física presencial completa</li>
+          <li>✔️ Treino no aplicativo</li>
+          <li>✔️ Suporte via WhatsApp</li>
+        </ul>
+        <p class="text-xl font-semibold text-white">Por apenas R$ 120,00</p>
+      </div>
+    </div>
+
+    <!-- Avaliações explicativas -->
+    <div class="grid md:grid-cols-2 gap-12">
+      <div>
+        <h3 class="text-2xl font-bold text-white mb-4">Avaliação física online</h3>
+        <p class="text-gray-300 text-base mb-4">Análise feita remotamente para acompanhar evolução e identificar limitações ou necessidades específicas.</p>
+        <ul class="list-disc ml-6 text-gray-300 space-y-2 text-sm">
+          <li>Medição corporal (autoavaliação guiada): peso, altura, circunferências (cintura, quadril, etc.).</li>
+          <li>Avaliação postural (via fotos ou vídeos enviados pelo aluno)</li>
+          <li>Teste físico simples (guiados por vídeo ou instrução): flexibilidade, força, resistência e equilíbrio.</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-2xl font-bold text-white mb-4">Avaliação física presencial</h3>
+        <p class="text-gray-300 text-base mb-4">Análise feita presencialmente para acompanhar evolução e identificar limitações ou necessidades específicas.</p>
+        <ul class="list-disc ml-6 text-gray-300 space-y-2 text-sm">
+          <li>Medição corporal presencial: peso, altura, circunferências (cintura, quadril, etc.).</li>
+          <li>Bioimpedância: avaliação da composição corporal (gordura corporal, massa magra, água corporal, etc.).</li>
+          <li>Avaliação postural (via fotos ou vídeos enviados pelo aluno)</li>
+          <li>Teste físico simples (guiados por instrução): flexibilidade, força, resistência e equilíbrio.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center mt-12">
+      <a href="https://wa.me/558191615693" class="inline-block bg-white text-red-700 font-semibold px-6 py-3 rounded-xl shadow-md btn-animate">Agendar avaliação agora</a>
+    </div>
+  </section>
+
+<!-- ACOMPANHAMENTO PRESENCIAL -->
+<section id="planos" class="py-20 px-6 bg-gradient-to-br from-black via-red-900 to-black max-w-6xl mx-auto" data-aos="fade-up">
+  <h2 class="text-4xl font-bold red-highlight mb-10 text-center">Acompanhamento Presencial</h2>
+  <p class="text-gray-300 mb-10 text-lg text-center max-w-3xl mx-auto">
+    Supervisão total em treinos presenciais. Corrija movimentos, evite lesões e evolua com acompanhamento direto.
+  </p>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <!-- Primeiro par -->
+    <div class="bg-red-600 rounded-xl p-6 shadow-lg text-white text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+         data-aos="slide-up" data-aos-delay="200">
+      <h3 class="text-xl font-bold mb-2">2x por semana</h3>
+      <p class="text-lg">R$ 300,00</p>
+      <p class="text-sm mt-2 text-gray-100">Total de 8 aulas por mês</p>
+    </div>
+    <div class="bg-white rounded-xl p-6 shadow-lg text-black text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+         data-aos="slide-up" data-aos-delay="0">
+      <h3 class="text-xl font-bold mb-2">3x por semana</h3>
+      <p class="text-lg">R$ 400,00</p>
+      <p class="text-sm mt-2 text-gray-700">Total de 12 aulas por mês</p>
+    </div>
+
+    <!-- Segundo par com atraso de 2s (2000ms) -->
+    <div class="bg-red-600 rounded-xl p-6 shadow-lg text-white text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+         data-aos="slide-down" data-aos-delay="400">
+      <h3 class="text-xl font-bold mb-2">4x por semana</h3>
+      <p class="text-lg">R$ 520,00</p>
+      <p class="text-sm mt-2 text-gray-100">Total de 16 aulas por mês</p>
+    </div>
+    <div class="bg-white rounded-xl p-6 shadow-lg text-black text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+         data-aos="slide-down" data-aos-delay="0">
+      <h3 class="text-xl font-bold mb-2">5x por semana</h3>
+      <p class="text-lg">R$ 630,00</p>
+      <p class="text-sm mt-2 text-gray-700">Total de 20 aulas por mês</p>
+    </div>
+  </div>
+
+  <div class="text-center mt-12" data-aos="zoom-in" data-aos-delay="2500">
+    <a href="https://wa.me/558191615693" class="inline-block bg-white text-red-700 font-semibold px-6 py-3 rounded-xl shadow-md btn-animate">
+      Escolher plano presencial
+    </a>
+  </div>
+</section>
+
+
+  <!-- Espaço visual -->
+  <div class="h-16"></div>
+
+  <!-- CTA FINAL -->
+  <section class="bg-red-700 text-white text-center py-20 px-6" data-aos="zoom-in">
+    <h2 class="text-4xl md:text-5xl font-bold mb-4">Vamos juntos transformar seu corpo?</h2>
+    <p class="mb-6 text-xl">Clique no botão abaixo e inicie agora com quem entende do assunto.</p>
+    <a href="https://wa.me/558191615693" class="bg-white text-red-700 font-semibold px-8 py-4 rounded-full shadow-md btn-animate text-lg">Fale com o Dayvson</a>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="text-center text-sm text-gray-400 py-6 bg-black">
+    &copy; 2025 Dayvson Victor - Todos os direitos reservados
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+</body>
+</html>
